@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.ndimage import gaussian_filter
 from torch.optim.lr_scheduler import StepLR
+from tqdm import tqdm
 
 train_losses = []
 test_losses = []
