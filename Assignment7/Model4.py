@@ -359,3 +359,10 @@ for epoch in range(1, num_epochs+1):
     # After each trained epoch , step up
     scheduler.step()
     test(model, device, test_loader)
+
+accuracy = test_acc[-1]
+total_params =  sum(p.numel() for p in model.parameters())
+
+
+assert total_params < 8000, f'Total parameters: {total_params:.2f}% is not less than 8000'
+assert accuracy > 0.992, f'Accuracy: {accuracy:.2f}% is not greater than 99.2%' 
