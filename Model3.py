@@ -2,6 +2,13 @@
 
 # Now I try to extract more features and output channels
 
+# Final Result of Model 3
+### Number of parameters: 10.8k
+
+### Best train accuracy: 96.5
+
+### Best test accuracy: 98.9
+
 from __future__ import print_function
 import torch
 import torch.nn as nn
@@ -79,9 +86,3 @@ class Net(nn.Module):
             output_size = output.numel() // output.size(0)
             return output.shape[1] * output.shape[2] * output.shape[3]
 
-# Final Result of Model 3
-### Number of parameters: 10.8k
-
-### Best train accuracy: 96.5
-
-### Best test accuracy: 98.9

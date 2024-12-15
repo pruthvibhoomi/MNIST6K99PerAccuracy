@@ -1,5 +1,11 @@
 # Model2 with 1X1 convs following usual Convs
 
+## Number of parameters:2.8k
+
+### Best train accuracy:93.26
+
+### Best test accuracy: 97.9
+
 from __future__ import print_function
 import torch
 import torch.nn as nn
@@ -99,8 +105,3 @@ class Net(nn.Module):
             output_size = output.numel() // output.size(0)
             return output.shape[1] * output.shape[2] * output.shape[3]
 
-## Number of parameters:2.8k
-
-### Best train accuracy:93.26
-
-### Best test accuracy: 97.9
