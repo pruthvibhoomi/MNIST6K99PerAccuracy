@@ -1,5 +1,12 @@
 # Model 4: Add some depthwise channels to see if it increases the accuracy .
 
+# Final Result of Model 4
+### Number of parameters: 8k
+
+### Best train accuracy: 99.05
+
+### Best test accuracy: 99.2
+
 from __future__ import print_function
 import torch
 import torch.nn as nn
